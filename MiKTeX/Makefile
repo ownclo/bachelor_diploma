@@ -15,7 +15,8 @@ RM = rm -f
 GREP = grep
 
 
-all: $(DIPLOMA_REPORT_PDF).pdf $(PRACTICE_REPORT_PDF).pdf $(TITLE_PDF).pdf $(TASK_PDF).pdf
+# $(PRACTICE_REPORT_PDF).pdf $(TITLE_PDF).pdf $(TASK_PDF).pdf
+all: $(DIPLOMA_REPORT_PDF).pdf
 
 
 publish_to_dropbox: all
@@ -27,7 +28,7 @@ $(DIPLOMA_REPORT_PDF).pdf: *.tex
 	$(BIBTEX) $(DIPLOMA_REPORT_PDF).aux
 	$(PDFLATEX) $(DIPLOMA_REPORT_PDF)
 	$(PDFLATEX) $(DIPLOMA_REPORT_PDF)
-	cp $(DIPLOMA_REPORT_PDF).pdf ../example_diploma.pdf
+	# cp $(DIPLOMA_REPORT_PDF).pdf ../example_diploma.pdf
 
 
 $(PRACTICE_REPORT_PDF).pdf: *.tex
@@ -56,5 +57,5 @@ cleanall: clean
 
 .PHONY: clean
 clean:
-	$(RM) *.aux *.log *.out *.toc *.gz *.gz(busy) *.blg *.bbl $(DIPLOMA_REPORT_PDF).pdf $(TASK_PDF).pdf $(TITLE_PDF).pdf $(PRACTICE_REPORT_PDF).pdf
+	$(RM) *.aux *.log *.out *.toc *.gz *.gz *.blg *.bbl $(DIPLOMA_REPORT_PDF).pdf $(TASK_PDF).pdf $(TITLE_PDF).pdf $(PRACTICE_REPORT_PDF).pdf
 
