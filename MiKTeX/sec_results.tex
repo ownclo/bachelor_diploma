@@ -1,0 +1,88 @@
+\section{Результаты сравнительного анализа моделей}
+\label{sec:results}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{romanCapS_histo.pdf}
+        \end{center}
+        \caption{Сравнение гистограмм размеров кадров для различных моделей (rs)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{borisFullMK_histo.pdf}
+        \end{center}
+        \caption{Сравнение гистограмм размеров кадров для различных моделей (b)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{borisFullML_histo.pdf}
+        \end{center}
+        \caption{Сравнение гистограмм размеров кадров для различных моделей (b)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{akiyo_srd.pdf}
+        \end{center}
+        \caption{Сравнение автокорреляции для различных моделей (SRD) (akiyo)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{borisFull_acflong.pdf}
+        \end{center}
+        \caption{Сравнение автокорреляции для различных моделей (LRD) (b)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{romanCapM_acf.pdf}
+        \end{center}
+        \caption{Сравнение автокорреляции для различных моделей (LRD) (rm)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{borisFull_bucket.pdf}
+        \end{center}
+        \caption{Тест с текущим ведром (b)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{akiyo_delay_presentation.pdf}
+        \end{center}
+        \caption{Задержка при передаче по CBR-каналу (akiyo)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{borisFull_delay.pdf}
+        \end{center}
+        \caption{Задержка при передаче по CBR-каналу (b)}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=\textwidth]{akiyo_jitter.pdf}
+        \end{center}
+        \caption{Джиттер при передаче по CBR-каналу (akiyo)}
+    \end{figure}
+
+    \begin{itemize}
+        \item Выбранные модели хорошо отражают краткосрочные
+            зависимости в моделируемом трафике
+        \item Предложенная марковская модель с нелинейным квантованием
+            превосходит линейную модель для б\`{о}льшей части
+            тестовых видеопоследовательностей
+        \item Предлложенная оценка задержки и джиттера является
+            полезным дополнением к имеющимся методикам
+        \item Тестовые видео хорошего качества обладают
+            долгосрочными зависимостями
+        \item Предложенные модели ``работают'' для тестовых
+            видео плохого качества, но не способны отражать
+            долгосрочные зависимости качественных видеопоследовательностей
+    \end{itemize}
+

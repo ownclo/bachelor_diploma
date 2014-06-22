@@ -402,10 +402,13 @@
 \pretocmd{\section}{\addtocounter{totequation}{\value{equation}}\setcounter{equation}{0}}{}{}
 \pretocmd{\bibitem}{\addtocounter{totreferences}{1}}{}{}
 
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 
 % Для оформления таблиц не влязящих на 1 страницу
 \usepackage{longtable}
+\usepackage{makecell}
 
 % Для включения pdf документов в результирующий файл
 \usepackage{pdfpages}

@@ -54,28 +54,6 @@
 	traffic;Traffic control;Transportation;Video sequences}
 }
 
-@ARTICLE{wavelet,
-  author = {Min Dai and Yueping Zhang and Loguinov, D.},
-  title = {A Unified Traffic Model for MPEG-4 and H.264 Video Traces},
-  journal = {Multimedia, IEEE Transactions on},
-  year = {2009},
-  volume = {11},
-  pages = {1010-1023},
-  number = {5},
-  month = {Aug},
-  doi = {10.1109/TMM.2009.2021802},
-  issn = {1520-9210},
-  keywords = {correlation methods;image enhancement;image sequences;statistical
-	analysis;telecommunication traffic;time-domain analysis;variable
-	rate codes;video coding;H.264 video trace;MPEG-4;VBR sequence;cross-layer
-	correlation;enhancement-layer model;frame-level hybrid framework;inter-GOP
-	correlation;statistical feature;time-domain model;unified traffic
-	model;variable bit rate;Intra-GOP correlation;inter-GOP correlation;long-range
-	dependency;short-range dependency;video traffic modeling;wavelet},
-  owner = {ownclo},
-  timestamp = {2014.06.22}
-}
-
 @OTHER{jitter,
   address = {United States},
   author = {Demichelis, C. and Chimento, P.},
